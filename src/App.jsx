@@ -12,6 +12,8 @@ function App() {
     setShowProductList(true);
   };
 
+  // This is a test for add and push
+
   return (
     <div className="app-container">
       <div className={`landing-page ${showProductList ? 'fade-out' : ''}`}>
