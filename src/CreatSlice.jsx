@@ -16,7 +16,8 @@ export const CreatSlice = createSlice({
         }
     },
     removeItem: (state, action) => {
-        state.items = state.items.filter(item => item.name !== action.payload);
+        const itemNameToRemove = action.payload.name;
+        state.items = state.items.filter(item => item.name !== itemNameToRemove);
     },
     updateQuantity: (state, action) => {
         const { name, quantity } = action.payload;
